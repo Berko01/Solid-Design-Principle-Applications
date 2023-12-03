@@ -9,9 +9,5 @@ public class Main {
 
         printConsole.print(log4j);
         printDatabase.print(log4j);
-
-
-        
-
     }
 }

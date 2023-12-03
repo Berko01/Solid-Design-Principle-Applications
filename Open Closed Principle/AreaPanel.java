@@ -4,8 +4,9 @@ public class AreaPanel {
    
     public double calculate(ArrayList<Area> shapes) {
         double result = 0;
-        for (Area area : shapes) {
-            result += area.calculateArea();
+        for (Area shape : shapes) {
+            if(shape instanceof Area)
+                result += shape.calculateArea();
         }
         return result;
     }

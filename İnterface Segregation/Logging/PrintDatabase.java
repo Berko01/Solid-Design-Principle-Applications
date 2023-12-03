@@ -1,4 +1,4 @@
-public class PrintDatabase implements Connection, IPrint{
+public class PrintDatabase implements IConnection, IPrint{
 
     IDatabase database;
 

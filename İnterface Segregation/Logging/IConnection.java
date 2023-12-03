@@ -1,4 +1,4 @@
-public interface Connection{
+public interface IConnection{
     public void openConnection();
     public void closeConnection();
 }

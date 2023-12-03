@@ -5,7 +5,8 @@ public class EnvironmentPanel {
     public double calculate(ArrayList<Environment> shapes) {
         double result = 0;
         for (Environment environment : shapes) {
-            result += environment.calculateEnvironment();
+            if(environment instanceof Environment)
+                result += environment.calculateEnvironment();
         }
         return result;
     }
